@@ -1,7 +1,7 @@
 {
-  "name": "Cordas de Ouro CCB",
-  "short_name": "Cordas de Ouro",
-  "description": "Acesso direto às plataformas Cordas de Ouro CCB",
+  "name": "DigitaHinos Plataforma",
+  "short_name": "DigitaHinos",
+  "description": "Acesso direto aos aplicativos DigitaHinos",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -9,7 +9,10 @@
   "background_color": "#0d1117",
   "theme_color": "#0d1117",
   "lang": "pt-BR",
-  "categories": ["music", "education"],
+  "categories": [
+    "music",
+    "education"
+  ],
   "icons": [
     {
       "src": "icon-72.png",
@@ -62,18 +65,28 @@
   ],
   "shortcuts": [
     {
-      "name": "YouTube",
-      "short_name": "YouTube",
-      "description": "Canal Cordas de Ouro no YouTube",
-      "url": "https://youtube.com/@cordasdeouroccb?si=tlCsc1GIowuqokKg",
-      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
+      "name": "Regência",
+      "short_name": "Regência",
+      "description": "DigitaHinos Regência",
+      "url": "https://capuchowp-design.github.io/DigitaHinos-Regencia-/",
+      "icons": [
+        {
+          "src": "icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
     },
     {
-      "name": "Guitar Game",
-      "short_name": "Guitar Game",
-      "description": "Jogo de guitarra interativo",
-      "url": "https://capuchowp-design.github.io/guitargameccb/",
-      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
+      "name": "Piano",
+      "short_name": "Piano",
+      "description": "DigitaHinos Piano",
+      "url": "https://capuchowp-design.github.io/DigitaHinos-Piano/",
+      "icons": [
+        {
+          "src": "icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
     }
   ]
 }

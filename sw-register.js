@@ -1,4 +1,4 @@
-// ── Cordas de Ouro | SW Registration ───────────────────────────────────────
+// ── DigitaHinos Plataforma | SW Registration ───────────────────────────────────────
 (function () {
     if (!('serviceWorker' in navigator)) return;
 

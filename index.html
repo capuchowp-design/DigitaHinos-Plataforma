@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cordas de Ouro | Dev Hub</title>
+    <title>DigitaHinos Plataforma</title>
 
     <!-- PWA Meta Tags -->
     <meta name="theme-color" content="#0d1117">
-    <meta name="description" content="Acesso direto às plataformas Cordas de Ouro CCB">
+    <meta name="description" content="Acesso direto aos aplicativos DigitaHinos">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Cordas de Ouro">
+    <meta name="apple-mobile-web-app-title" content="DigitaHinos">
     <meta name="mobile-web-app-capable" content="yes">
 
     <!-- PWA Icons -->
@@ -174,12 +174,7 @@
         }
 
         /* staggered entrance */
-        .dev-card:nth-child(1) { animation: slideUp 0.5s ease 0.15s both; }
-        .dev-card:nth-child(2) { animation: slideUp 0.5s ease 0.22s both; }
-        .dev-card:nth-child(3) { animation: slideUp 0.5s ease 0.29s both; }
-        .dev-card:nth-child(4) { animation: slideUp 0.5s ease 0.36s both; }
-        .dev-card:nth-child(5) { animation: slideUp 0.5s ease 0.43s both; }
-        .dev-card:nth-child(6) { animation: slideUp 0.5s ease 0.50s both; }
+        .dev-card { animation: slideUp 0.5s ease calc(0.15s + var(--i, 0) * 0.05s) both; }
 
         .dev-card::after {
             content: '';
@@ -255,8 +250,8 @@
                 <line x1="13" y1="15" x2="21" y2="23" stroke="#f0c040" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
             </svg>
         </div>
-        <h1>~/cordas_de_ouro</h1>
-        <p class="subtitle">acesso_direto_a_plataformas</p>
+        <h1>~/digitahinos_plataforma</h1>
+        <p class="subtitle">acesso_direto_aos_aplicativos</p>
     </header>
 
     <!-- PWA Install guide (iOS / generic) -->
@@ -270,46 +265,88 @@
 
     <!-- Nav links -->
     <nav>
-        <a href="https://youtube.com/@cordasdeouroccb?si=tlCsc1GIowuqokKg" class="dev-card" target="_blank" rel="noopener">
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Regencia-/" class="dev-card" style="--i:0" target="_blank" rel="noopener">
             <span class="card-num">01.</span>
-            <span class="card-icon">▶</span>
-            <span class="card-label">YouTube</span>
+            <span class="card-icon">🎼</span>
+            <span class="card-label">Regência</span>
             <span class="card-arrow">→</span>
         </a>
-        <a href="https://capuchowp-design.github.io/guitargameccb/" class="dev-card" target="_blank" rel="noopener">
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Ukulele/" class="dev-card" style="--i:1" target="_blank" rel="noopener">
             <span class="card-num">02.</span>
+            <span class="card-icon">🪕</span>
+            <span class="card-label">Ukulele</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-ViolaCaipira/" class="dev-card" style="--i:2" target="_blank" rel="noopener">
+            <span class="card-num">03.</span>
             <span class="card-icon">🎸</span>
+            <span class="card-label">Viola Caipira</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Gaita/" class="dev-card" style="--i:3" target="_blank" rel="noopener">
+            <span class="card-num">04.</span>
+            <span class="card-icon">🪗</span>
+            <span class="card-label">Gaita</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Trompete-/" class="dev-card" style="--i:4" target="_blank" rel="noopener">
+            <span class="card-num">05.</span>
+            <span class="card-icon">🎺</span>
+            <span class="card-label">Trompete</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Violao/" class="dev-card" style="--i:5" target="_blank" rel="noopener">
+            <span class="card-num">06.</span>
+            <span class="card-icon">🎸</span>
+            <span class="card-label">Violão</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Clarinete/" class="dev-card" style="--i:6" target="_blank" rel="noopener">
+            <span class="card-num">07.</span>
+            <span class="card-icon">🎶</span>
+            <span class="card-label">Clarinete</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-FlautaDoce/" class="dev-card" style="--i:7" target="_blank" rel="noopener">
+            <span class="card-num">08.</span>
+            <span class="card-icon">🎵</span>
+            <span class="card-label">Flauta Doce</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Sax/" class="dev-card" style="--i:8" target="_blank" rel="noopener">
+            <span class="card-num">09.</span>
+            <span class="card-icon">🎷</span>
+            <span class="card-label">Sax</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Tuba/" class="dev-card" style="--i:9" target="_blank" rel="noopener">
+            <span class="card-num">10.</span>
+            <span class="card-icon">🎺</span>
+            <span class="card-label">Tuba</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Violino/" class="dev-card" style="--i:10" target="_blank" rel="noopener">
+            <span class="card-num">11.</span>
+            <span class="card-icon">🎻</span>
+            <span class="card-label">Violino</span>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://capuchowp-design.github.io/GuitarGame-CCB/" class="dev-card" style="--i:11" target="_blank" rel="noopener">
+            <span class="card-num">12.</span>
+            <span class="card-icon">🎮</span>
             <span class="card-label">Guitar Game</span>
             <span class="card-arrow">→</span>
         </a>
-        <a href="https://capuchowp-design.github.io/violinotab/" class="dev-card" target="_blank" rel="noopener">
-            <span class="card-num">03.</span>
-            <span class="card-icon">🎻</span>
-            <span class="card-label">Violino Tab</span>
-            <span class="card-arrow">→</span>
-        </a>
-        <a href="https://capuchowp-design.github.io/tabcraft/" class="dev-card" target="_blank" rel="noopener">
-            <span class="card-num">04.</span>
-            <span class="card-icon">🎼</span>
-            <span class="card-label">Tab Craft</span>
-            <span class="card-arrow">→</span>
-        </a>
-        <a href="https://capuchowp-design.github.io/pianotab/" class="dev-card" target="_blank" rel="noopener">
-            <span class="card-num">05.</span>
+        <a href="https://capuchowp-design.github.io/DigitaHinos-Piano/" class="dev-card" style="--i:12" target="_blank" rel="noopener">
+            <span class="card-num">13.</span>
             <span class="card-icon">🎹</span>
-            <span class="card-label">Piano Tab</span>
-            <span class="card-arrow">→</span>
-        </a>
-        <a href="https://drive.google.com/drive/folders/1ogFEiMc1QWYNcLEw52bt7HUnxpBYC2q6" class="dev-card" target="_blank" rel="noopener">
-            <span class="card-num">06.</span>
-            <span class="card-icon">📄</span>
-            <span class="card-label">PDFs</span>
+            <span class="card-label">Piano</span>
             <span class="card-arrow">→</span>
         </a>
     </nav>
 
     <footer>
-        &copy; 2026 | <span>CORDAS DE OURO CCB</span>
+        &copy; 2026 | <span>DIGITAHINOS PLATAFORMA</span>
     </footer>
 </div>
 

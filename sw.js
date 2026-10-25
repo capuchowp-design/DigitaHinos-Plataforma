@@ -1,22 +1,24 @@
-// ── Cordas de Ouro | Service Worker ────────────────────────────────────────
-const CACHE_NAME = 'cordas-de-ouro-v1';
+// ── DigitaHinos Plataforma | Service Worker ────────────────────────────────────────
+const CACHE_NAME = 'digitahinos-plataforma-v2';
 
 // Assets to pre-cache for offline use
 const PRECACHE_ASSETS = [
     './',
     './index.html',
     './manifest.json',
-    './icons/icon-192.png',
-    './icons/icon-512.png',
+    './icon-192.png',
+    './icon-512.png',
+    './sw-register.js',
     'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap'
 ];
 
 // ── Install: pre-cache shell assets ────────────────────────────────────────
 self.addEventListener('install', (event) => {
     event.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(PRECACHE_ASSETS);
-        })
+        caches.open(CACHE_NAME).then((cache) =>
+            // Tolerante: um arquivo que falhe não derruba a instalação do SW
+            Promise.all(PRECACHE_ASSETS.map((url) => cache.add(url).catch(() => null)))
+        )
     );
     // Activate immediately without waiting for old tabs to close
     self.skipWaiting();
@@ -41,7 +43,7 @@ self.addEventListener('fetch', (event) => {
     const { request } = event;
     const url = new URL(request.url);
 
-    // External links (YouTube, GitHub pages) → always network, no caching
+    // External links (apps DigitaHinos no GitHub Pages) → always network, no caching
     const externalHosts = [
         'youtube.com',
         'capuchowp-design.github.io'
