@@ -205,7 +205,19 @@
             font-size: 1.1rem;
             line-height: 1;
         }
-        .card-label { flex: 1; }
+        .card-label { flex: 1; min-width: 0; }
+        .badge {
+            flex-shrink: 0;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            padding: 0.2rem 0.5rem;
+            border-radius: 999px;
+            white-space: nowrap;
+            border: 1px solid;
+        }
+        .badge-free { color: #3fb950; background: rgba(63,185,80,0.12); border-color: rgba(63,185,80,0.5); }
+        .badge-pro  { color: var(--gold); background: var(--gold-dim); border-color: rgba(240,192,64,0.5); }
         .card-arrow {
             color: var(--muted);
             font-size: 0.7rem;
@@ -269,78 +281,91 @@
             <span class="card-num">01.</span>
             <span class="card-icon">🎼</span>
             <span class="card-label">Regência</span>
+            <span class="badge badge-free">100% grátis</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-Ukulele/" class="dev-card" style="--i:1" target="_blank" rel="noopener">
             <span class="card-num">02.</span>
             <span class="card-icon">🪕</span>
             <span class="card-label">Ukulele</span>
+            <span class="badge badge-free">100% grátis</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-ViolaCaipira/" class="dev-card" style="--i:2" target="_blank" rel="noopener">
             <span class="card-num">03.</span>
             <span class="card-icon">🎸</span>
             <span class="card-label">Viola Caipira</span>
+            <span class="badge badge-pro">50 hinos liberados</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-Gaita/" class="dev-card" style="--i:3" target="_blank" rel="noopener">
             <span class="card-num">04.</span>
             <span class="card-icon">🪗</span>
             <span class="card-label">Gaita</span>
+            <span class="badge badge-free">100% grátis</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-Trompete-/" class="dev-card" style="--i:4" target="_blank" rel="noopener">
             <span class="card-num">05.</span>
             <span class="card-icon">🎺</span>
             <span class="card-label">Trompete</span>
+            <span class="badge badge-pro">50 hinos liberados</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-Violao/" class="dev-card" style="--i:5" target="_blank" rel="noopener">
             <span class="card-num">06.</span>
             <span class="card-icon">🎸</span>
             <span class="card-label">Violão</span>
+            <span class="badge badge-pro">50 hinos liberados</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-Clarinete/" class="dev-card" style="--i:6" target="_blank" rel="noopener">
             <span class="card-num">07.</span>
             <span class="card-icon">🎶</span>
             <span class="card-label">Clarinete</span>
+            <span class="badge badge-pro">50 hinos liberados</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-FlautaDoce/" class="dev-card" style="--i:7" target="_blank" rel="noopener">
             <span class="card-num">08.</span>
             <span class="card-icon">🎵</span>
             <span class="card-label">Flauta Doce</span>
+            <span class="badge badge-pro">50 hinos liberados</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-Sax/" class="dev-card" style="--i:8" target="_blank" rel="noopener">
             <span class="card-num">09.</span>
             <span class="card-icon">🎷</span>
             <span class="card-label">Sax</span>
+            <span class="badge badge-pro">50 hinos liberados</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-Tuba/" class="dev-card" style="--i:9" target="_blank" rel="noopener">
             <span class="card-num">10.</span>
             <span class="card-icon">🎺</span>
             <span class="card-label">Tuba</span>
+            <span class="badge badge-pro">50 hinos liberados</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-Violino/" class="dev-card" style="--i:10" target="_blank" rel="noopener">
             <span class="card-num">11.</span>
             <span class="card-icon">🎻</span>
             <span class="card-label">Violino</span>
+            <span class="badge badge-pro">50 hinos liberados</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/GuitarGame-CCB/" class="dev-card" style="--i:11" target="_blank" rel="noopener">
             <span class="card-num">12.</span>
             <span class="card-icon">🎮</span>
             <span class="card-label">Guitar Game</span>
+            <span class="badge badge-free">100% grátis</span>
             <span class="card-arrow">→</span>
         </a>
         <a href="https://capuchowp-design.github.io/DigitaHinos-Piano/" class="dev-card" style="--i:12" target="_blank" rel="noopener">
             <span class="card-num">13.</span>
             <span class="card-icon">🎹</span>
             <span class="card-label">Piano</span>
+            <span class="badge badge-free">100% grátis</span>
             <span class="card-arrow">→</span>
         </a>
     </nav>
