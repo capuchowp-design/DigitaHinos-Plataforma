@@ -1,5 +1,5 @@
 // ── DigitaHinos Plataforma | Service Worker ────────────────────────────────────────
-const CACHE_NAME = 'digitahinos-plataforma-v5';
+const CACHE_NAME = 'digitahinos-plataforma-v6';
 
 // Assets to pre-cache for offline use
 const PRECACHE_ASSETS = [
